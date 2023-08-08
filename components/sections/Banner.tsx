@@ -5,16 +5,19 @@ import React from "react";
 const Banner = () => {
   return (
     <section id="Home" className="container mx-auto px-4 space-y-4">
-      <h1 className="font-titleFont font-semibold text-2xl md:text-6xl">
-        &quot;Exploring the Delights of
-        <br />
+      <h1 className="font-titleFont font-semibold text-2xl md:text-5xl">
+        &quot;Exploring the Delights of <br className="hidden md:block" />
         Vietnamese Cuisine&quot;
       </h1>
-      <div className="grid grid-cols-1 xl:grid-cols-5 space-x-12 items-center">
+      <div className="grid grid-cols-1 xl:grid-cols-5 space-y-4 xl:space-x-12 items-center">
         <div className="xl:col-span-3">
-          <Image src={img1} alt="Home" className="rounded-3xl bg-cover" />
+          <Image
+            src={img1}
+            alt="Home"
+            className="rounded-3xl bg-cover max-h-[550px]"
+          />
         </div>
-        <div className="col-span-2 flex flex-wrap space-y-4">
+        <div className="col-span-2 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-1 gap-y-2">
           <div className="flex space-x-2 items-center">
             <Image src={img2} alt="Pho" className="rounded-xl h-20 w-24" />
             <div className="flex-1">
