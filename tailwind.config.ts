@@ -35,6 +35,7 @@ module.exports = {
         standarGray: "#9FA0A0",
         standardBlack: "#323232",
         standarOrange: "#FE5133",
+        standarYellow: "#F3BA26",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

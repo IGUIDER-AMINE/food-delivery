@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <section id="Banner" className="container mx-auto px-4">
+    <section id="Home" className="container mx-auto px-4">
       Banner
     </section>
   );

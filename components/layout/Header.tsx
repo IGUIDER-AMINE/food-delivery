@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import { MdOutlineClose } from "react-icons/md";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { MdOutlineClose } from "react-icons/md";
+import { FaShoppingCart } from "react-icons/Fa";
+import { BsSearch } from "react-icons/Bs";
 
 const Header = () => {
   const [showProducts, setShowProducts] = useState(false);
@@ -36,7 +38,7 @@ const Header = () => {
           </span>
         </motion.div>
         <div className="hidden xl:inline-flex">
-          <ul className="flex gap-x-5 ">
+          <ul className="flex gap-x-5 items-center">
             <motion.li
               initial={{ y: -50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -75,23 +77,42 @@ const Header = () => {
             </motion.li>
           </ul>
         </div>
-        <motion.div
-          initial={{ y: -50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-          className="hidden xl:block"
-        >
-          <button className="flex items-end gap-2 text-[14px] rounded-xl text-white bg-standardGreen px-8 py-3">
-            Sign Up
-          </button>
-        </motion.div>
+        <div className="flex space-x-4">
+          <motion.div
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            className="hidden xl:flex items-center space-x-2 border rounded-xl p-2"
+          >
+            <BsSearch className="h-4 w-4" />
+            <input placeholder="Search" />
+          </motion.div>
+          <motion.div
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            className="hidden xl:block bg-standarYellow p-4 rounded-full"
+          >
+            <FaShoppingCart className="text-white h-4 w-4" />
+          </motion.div>
+          <motion.div
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.7 }}
+            className="hidden xl:block"
+          >
+            <button className="flex items-end gap-2 text-[14px] rounded-xl text-white bg-standardGreen px-8 py-3">
+              Sign Up
+            </button>
+          </motion.div>
+        </div>
         <div
           onClick={() => setShowProducts(true)}
           className="w-6 h-5 flex flex-col justify-between items-center xl:hidden text-4xl cursor-pointer overflow-hidden group"
         >
-          <span className="w-full h-[2px] bg-[#FFC62D] inline-flex transform group-hover:translate-x-2 transition-all ease-in-out duration-300"></span>
-          <span className="w-full h-[2px] bg-[#FFC62D] inline-flex transform translate-x-3 group-hover:translate-x-0 transition-all ease-in-out duration-300"></span>
-          <span className="w-full h-[2px] bg-[#FFC62D] inline-flex transform translate-x-1 group-hover:translate-x-3 transition-all ease-in-out duration-300"></span>
+          <span className="w-full h-[2px] bg-standardGreen inline-flex transform group-hover:translate-x-2 transition-all ease-in-out duration-300"></span>
+          <span className="w-full h-[2px] bg-standardGreen inline-flex transform translate-x-3 group-hover:translate-x-0 transition-all ease-in-out duration-300"></span>
+          <span className="w-full h-[2px] bg-standardGreen inline-flex transform translate-x-1 group-hover:translate-x-3 transition-all ease-in-out duration-300"></span>
         </div>
         {/* sideBar */}
         {showProducts ? (
@@ -107,11 +128,13 @@ const Header = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
               >
-                <span className="text-3xl font-titleFont">Burrger</span>
+                <span className="text-3xl font-titleFont text-standarOrange">
+                  FRESH
+                </span>
               </motion.div>
               <MdOutlineClose
                 onClick={() => setShowProducts(false)}
-                className="text-3xl text-[#FFC62D] cursor-pointer absolute top-4 right-4"
+                className="text-3xl text-standardGreen cursor-pointer absolute top-4 right-4"
               />
             </div>
             <ul className="space-y-4">
@@ -130,7 +153,7 @@ const Header = () => {
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
                 <Link href="#Products" onClick={handleScroll}>
-                  Products
+                  Catalog
                 </Link>
               </motion.li>
               <motion.li
@@ -139,7 +162,7 @@ const Header = () => {
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
                 <Link href="#Store" onClick={handleScroll}>
-                  Store
+                  Shop
                 </Link>
               </motion.li>
               <motion.li
@@ -148,19 +171,38 @@ const Header = () => {
                 transition={{ duration: 0.5, delay: 0.5 }}
               >
                 <Link href="#AboutUs" onClick={handleScroll}>
-                  About us
+                  Contact
                 </Link>
               </motion.li>
             </ul>
-            <motion.div
-              initial={{ y: -50, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-            >
-              <button className="flex items-end gap-2 text-[14px] rounded-full text-[#C6381F] bg-[#FFC62D] px-8 py-3">
-                Sign Up
-              </button>
-            </motion.div>
+            <div className="space-y-4">
+              <motion.div
+                initial={{ y: -50, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+                className="flex items-center space-x-2 border rounded-xl p-2"
+              >
+                <BsSearch className="h-4 w-4" />
+                <input placeholder="Search" />
+              </motion.div>
+              <motion.div
+                initial={{ y: -50, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+                className="bg-standarYellow w-[48px] p-4 rounded-full"
+              >
+                <FaShoppingCart className="text-white h-4 w-4" />
+              </motion.div>
+              <motion.div
+                initial={{ y: -50, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+              >
+                <button className="flex items-end gap-2 text-[14px] rounded-xl text-white bg-standardGreen px-8 py-3">
+                  Sign Up
+                </button>
+              </motion.div>
+            </div>
           </motion.div>
         ) : null}
       </div>
