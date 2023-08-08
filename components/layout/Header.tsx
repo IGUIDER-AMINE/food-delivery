@@ -34,7 +34,7 @@ const Header = () => {
           <span className="text-3xl font-titleFont">Burrger</span>
         </motion.div>
         <div className="hidden xl:inline-flex">
-          <ul className="flex gap-x-5 text-standardcolor">
+          <ul className="flex gap-x-5 text-standardGreen">
             <motion.li
               initial={{ y: -50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -77,7 +77,7 @@ const Header = () => {
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.6 }}
-          className="hidden xl:block text-standardcolor"
+          className="hidden xl:block text-standardGreen"
         >
           <button className="flex items-end gap-2 text-[14px] rounded-full text-[#C6381F] bg-[#FFC62D] px-8 py-3">
             Sign in
