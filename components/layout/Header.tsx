@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { MdOutlineClose } from "react-icons/md";
-import { FaShoppingCart } from "react-icons/Fa";
-import { BsSearch } from "react-icons/Bs";
+import { FaShoppingCart } from "react-icons/fa";
+import { BsSearch } from "react-icons/bs";
 
 const Header = () => {
   const [showProducts, setShowProducts] = useState(false);
