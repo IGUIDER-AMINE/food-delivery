@@ -24,17 +24,19 @@ const Header = () => {
   };
 
   return (
-    <section className="w-full sticky bg-[#FEFDF9] text-[#FFC62D] top-0 z-10">
+    <section className="w-full sticky text-standarGray bg-[#FEFDF9] top-0 z-10">
       <div className="text-[15px] font-medium py-4 flex items-center justify-between container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <span className="text-3xl font-titleFont">Burrger</span>
+          <span className="text-3xl font-titleFont text-standarOrange">
+            FRESH
+          </span>
         </motion.div>
         <div className="hidden xl:inline-flex">
-          <ul className="flex gap-x-5 text-standardGreen">
+          <ul className="flex gap-x-5 ">
             <motion.li
               initial={{ y: -50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -50,7 +52,7 @@ const Header = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               <Link href="#Products" onClick={handleScroll}>
-                Products
+                Catalog
               </Link>
             </motion.li>
             <motion.li
@@ -59,7 +61,7 @@ const Header = () => {
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <Link href="#Store" onClick={handleScroll}>
-                Store
+                Shop
               </Link>
             </motion.li>
             <motion.li
@@ -68,7 +70,7 @@ const Header = () => {
               transition={{ duration: 0.5, delay: 0.5 }}
             >
               <Link href="#AboutUs" onClick={handleScroll}>
-                About us
+                Contact
               </Link>
             </motion.li>
           </ul>
@@ -77,10 +79,10 @@ const Header = () => {
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.6 }}
-          className="hidden xl:block text-standardGreen"
+          className="hidden xl:block"
         >
-          <button className="flex items-end gap-2 text-[14px] rounded-full text-[#C6381F] bg-[#FFC62D] px-8 py-3">
-            Sign in
+          <button className="flex items-end gap-2 text-[14px] rounded-xl text-white bg-standardGreen px-8 py-3">
+            Sign Up
           </button>
         </motion.div>
         <div
@@ -156,7 +158,7 @@ const Header = () => {
               transition={{ duration: 0.5, delay: 0.6 }}
             >
               <button className="flex items-end gap-2 text-[14px] rounded-full text-[#C6381F] bg-[#FFC62D] px-8 py-3">
-                Sign in
+                Sign Up
               </button>
             </motion.div>
           </motion.div>

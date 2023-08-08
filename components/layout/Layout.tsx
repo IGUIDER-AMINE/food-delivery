@@ -10,7 +10,7 @@ type LayoutProps = {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <section>
-      <main className="h-[100vh] space-y-24 text-standardBlack font-bodyFont bg-gradient-to-r bg-[#FEFDF9] font-medium text-standardcolor justify-between overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-standarOrange/20 scrollbar-thumb-standarOrange/60 flex flex-col">
+      <main className="h-[100vh] space-y-24 text-standardBlack font-bodyFont bg-gradient-to-r bg-[#FEFDF9] font-medium text-standardcolor justify-between overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-stanscrollbar-thumb-standardGreen/20 scrollbar-thumb-standardGreen/60 flex flex-col">
         <Header />
         {children}
         <Footer />
