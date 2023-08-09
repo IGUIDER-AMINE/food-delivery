@@ -14,7 +14,8 @@ const Banner = () => {
           <Image
             src={img1}
             alt="Home"
-            className="rounded-3xl bg-cover max-h-[550px]"
+            priority
+            className="rounded-3xl bg-cover max-h-[430px]"
           />
         </div>
         <div className="col-span-2 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-1 gap-y-2">
