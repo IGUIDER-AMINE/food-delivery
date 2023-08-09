@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import { GoPlusCircle } from "react-icons/go";
-import { img3 } from "@/public/assets";
 
 interface Props {
   title: string;
@@ -29,7 +28,7 @@ const CardPlate = ({ title, des, image, price }: Props) => {
             PRICE - <span className="text-standarPink">${price}</span>/$348
           </div>
           <button>
-            <GoPlusCircle className="w-10 h-10" />
+            <GoPlusCircle className="w-8 h-8" />
           </button>
         </div>
       </div>

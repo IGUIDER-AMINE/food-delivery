@@ -1,9 +1,15 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const AboutUs = () => {
   return (
     <section id="Banner" className="container mx-auto px-4">
-      <div className="container mx-auto flex flex-col lg:flex-row p-3 lg:space-x-4 xl:px-12 gap-4 rounded-3xl bg-standardGreen text-white">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.1, duration: 0.5 }}
+        className="container mx-auto flex flex-col lg:flex-row p-3 lg:space-x-4 xl:px-12 gap-4 rounded-3xl bg-standardGreen text-white"
+      >
         <h1 className="font-titleFont py-4 text-2xl self-center">
           What is the speciality of Vietnam food
         </h1>
@@ -14,7 +20,7 @@ const AboutUs = () => {
           culinary experience. Several key elements contribute to the
           distinvtiveness of Vietnamese cuisine:
         </p>
-      </div>
+      </motion.div>
     </section>
   );
 };
