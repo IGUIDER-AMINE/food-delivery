@@ -34,6 +34,7 @@ module.exports = {
         standardGreen: "#2B6E4F",
         standarSlate: "#696969",
         standarGray: "#9FA0A0",
+        standarPink: "#F688A7",
         standardBlack: "#323232",
         standarOrange: "#FE5133",
         standarYellow: "#F3BA26",
