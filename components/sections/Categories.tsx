@@ -1,11 +1,10 @@
-import { img3 } from "@/public/assets";
-import Image from "next/image";
 import React from "react";
-import { GoPlusCircle } from "react-icons/go";
 import CardPlate from "../elements/CardPlate";
+import { PlateData } from "@/util/data";
+
 const Categories = () => {
   return (
-    <section id="Home" className="container mx-auto px-4 space-y-16">
+    <section id="Categories" className="container mx-auto px-4 space-y-16">
       <div className="space-y-8">
         <h1 className="font-titleFont font-bold text-4xl">Top Categories</h1>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 items-center ">
@@ -33,14 +32,17 @@ const Categories = () => {
         Today&apos;s Menu
       </h1>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <CardPlate />
-        <CardPlate />
-        <CardPlate />
-        <CardPlate />
-        <CardPlate />
-        <CardPlate />
-        <CardPlate />
-        <CardPlate />
+        {PlateData?.map((item, index) => {
+          return (
+            <CardPlate
+              key={index}
+              title={item?.title}
+              des={item?.des}
+              image={item?.image}
+              price={item?.price}
+            />
+          );
+        })}
       </div>
     </section>
   );

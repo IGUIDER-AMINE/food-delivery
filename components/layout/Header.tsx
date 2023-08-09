@@ -53,7 +53,7 @@ const Header = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              <Link href="#Products" onClick={handleScroll}>
+              <Link href="#Categories" onClick={handleScroll}>
                 Catalog
               </Link>
             </motion.li>
@@ -62,7 +62,7 @@ const Header = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              <Link href="#Store" onClick={handleScroll}>
+              <Link href="#Reserve" onClick={handleScroll}>
                 Shop
               </Link>
             </motion.li>
@@ -71,7 +71,7 @@ const Header = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              <Link href="#AboutUs" onClick={handleScroll}>
+              <Link href="#Footer" onClick={handleScroll}>
                 Contact
               </Link>
             </motion.li>
@@ -96,6 +96,7 @@ const Header = () => {
             <FaShoppingCart className="text-white h-4 w-4" />
           </motion.div>
           <motion.div
+            role="button"
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.7 }}
@@ -152,7 +153,7 @@ const Header = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
-                <Link href="#Products" onClick={handleScroll}>
+                <Link href="#Categories" onClick={handleScroll}>
                   Catalog
                 </Link>
               </motion.li>
@@ -161,7 +162,7 @@ const Header = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
-                <Link href="#Store" onClick={handleScroll}>
+                <Link href="#Reserve" onClick={handleScroll}>
                   Shop
                 </Link>
               </motion.li>
@@ -170,7 +171,7 @@ const Header = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
               >
-                <Link href="#AboutUs" onClick={handleScroll}>
+                <Link href="#Footer" onClick={handleScroll}>
                   Contact
                 </Link>
               </motion.li>
@@ -186,6 +187,7 @@ const Header = () => {
                 <input placeholder="Search" />
               </motion.div>
               <motion.div
+                role="button"
                 initial={{ y: -50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.6 }}

@@ -9,7 +9,7 @@ const Reserve = () => {
         </h1>
         <div>
           <button className="bg-standardGreen text-white rounded-xl px-6 py-2">
-            View all chief
+            Book a Table
           </button>
         </div>
       </div>
