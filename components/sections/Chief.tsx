@@ -21,12 +21,7 @@ const Chief = () => {
       </div>
       <div className="flex flex-col flex-wrap md:flex-row justify-evenly gap-4">
         <div className="space-y-2 flex flex-col items-center">
-          <Image
-            src={img9}
-            alt="Chief"
-            className="rounded-full w-56 h-56"
-            quality={100}
-          />
+          <Image src={img9} alt="Chief" className="rounded-full w-56 h-56" />
           <h2 className="font-semibold font-titleFont">
             RASALINA DE WILLAMSON
           </h2>
@@ -35,24 +30,14 @@ const Chief = () => {
           </h3>
         </div>
         <div className="space-y-2 flex flex-col items-center">
-          <Image
-            src={img10}
-            alt="Chief"
-            className="rounded-full w-56 h-56"
-            quality={100}
-          />
+          <Image src={img10} alt="Chief" className="rounded-full w-56 h-56" />
           <h2 className="font-semibold font-titleFont">MARK HENRY TIX</h2>
           <h3 className="text-standardGreen font-semibold font-titleFont">
             09 YEAR EXPERIENCE
           </h3>
         </div>
         <div className="space-y-2 flex flex-col items-center">
-          <Image
-            src={img11}
-            alt="Chief"
-            className="rounded-full w-56 h-56"
-            quality={100}
-          />
+          <Image src={img11} alt="Chief" className="rounded-full w-56 h-56" />
           <h2 className="font-semibold font-titleFont">YLINA PITERSON KIM</h2>
           <h3 className="text-standardGreen font-semibold font-titleFont">
             06 YEAR EXPERIENCE
