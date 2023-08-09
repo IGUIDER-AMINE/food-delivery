@@ -12,7 +12,7 @@ const Layout = ({ children }: LayoutProps) => {
     <section>
       <main className="h-[100vh] text-standardBlack font-bodyFont bg-gradient-to-r bg-[#FEFDF9] font-medium text-standardcolor justify-between overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-stanscrollbar-thumb-standardGreen/20 scrollbar-thumb-standardGreen/60 flex flex-col">
         <Header />
-        <div className="space-y-24">{children}</div>
+        <div className="space-y-24 pb-24">{children}</div>
         <Footer />
       </main>
     </section>

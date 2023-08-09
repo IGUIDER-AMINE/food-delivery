@@ -32,6 +32,7 @@ module.exports = {
       },
       colors: {
         standardGreen: "#2B6E4F",
+        standarSlate: "#696969",
         standarGray: "#9FA0A0",
         standardBlack: "#323232",
         standarOrange: "#FE5133",
