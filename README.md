@@ -10,4 +10,4 @@ https://food-delivery-tau-neon.vercel.app/
 
 <!-- npx create-next-app@latest --typescript ./ -->
 <!-- https://react-icons.github.io/react-icons/icons?name=ai -->
-<!-- https://dribbble.com/shots/21911253-Propertymax-Real-Estate-Landing-Page -->
+<!-- https://dribbble.com/shots/22214942-Food-Delivery-Landing-page-UX-UI-Design -->

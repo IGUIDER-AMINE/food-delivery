@@ -7,7 +7,7 @@ const Features = () => {
     <section id="Features" className="container text-standarGray mx-auto px-4">
       <div className="grid xl:grid-cols-12 gap-4">
         <div className="col-span-6 space-y-6">
-          <h1 className="font-titleFont text-5xl font-bold text-standardBlack">
+          <h1 className="font-titleFont text-4xl font-bold text-standardBlack">
             Key features of Vietnam food include
           </h1>
           <p>
